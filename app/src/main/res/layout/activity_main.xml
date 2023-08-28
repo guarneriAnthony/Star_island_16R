@@ -21,42 +21,41 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:text="@string/choisir_un_ship"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewActivity" />
 
-    <RadioGroup
-        android:id="@+id/ship_options"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez quelque chose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLayoutId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.013">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.365"
+        android:text="Btn"/>
 
-        <RadioButton
-            android:id="@+id/fregate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fregate" />
-
-        <RadioButton
-            android:id="@+id/worldShip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/worldship" />
-
-        <RadioButton
-            android:id="@+id/chasseur"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/chasseur" />
-    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

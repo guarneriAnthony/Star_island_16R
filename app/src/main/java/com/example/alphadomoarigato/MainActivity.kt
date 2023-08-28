@@ -3,6 +3,7 @@ package com.example.alphadomoarigato
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
+import android.widget.Button
 import com.example.alphadomoarigato.databinding.ActivityMainBinding
 import com.example.alphadomoarigato.planet.Atmosphere
 import com.example.alphadomoarigato.planet.Planet
@@ -10,6 +11,11 @@ import com.example.alphadomoarigato.planet.PlanetRock
 import com.example.alphadomoarigato.ship.CivilShip
 import com.example.alphadomoarigato.ship.TypeShip
 import com.example.alphadomoarigato.ship.WarShip
+import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.textfield.TextInputLayout
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStreamReader
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,14 +40,35 @@ class MainActivity : AppCompatActivity() {
         val mars = PlanetRock("mars", 100, "gaz", atmosphereGlobal, 50.0f, 16, 0, shipArray)
 
 
-            val shipChoice = when(binding.fregate.isChecked){
-                binding.fregate.isChecked -> println("fregate ch")
-                binding.chasseur.isChecked -> println("chasseur ch")
-                binding.worldShip.isChecked -> binding.textViewActivity.text = "zutt"
-                else -> {
-                    println("out")
-                }
-            }
+        val btn = findViewById<Button>(R.id.btnLayoutId)
+        btn.setOnClickListener(){
+            println(btn.text)
+        }
+
+//        val textInputLayout = findViewById<TextInputLayout>(R.id.textInputLayout)
+//        val editText = textInputLayout.editText
+//
+//        textInputLayout.setOnClickListener(){
+//            println(textInputLayout.editText)
+//        }
+//
+//        val inputValue = editText?.text.toString()
+//
+//        binding.textView.text = inputValue
+
+//        try {
+//            val br = BufferedReader(InputStreamReader(System.`in`))
+//            println("Choisir un Ship: ")
+//            val shipChoice = br.readLine()
+//            println(shipChoice)
+//            br.close()
+//        } catch (e: IOException) {
+//            e.printStackTrace()
+//        }
+
+
+
+
         }
 
 

@@ -2,7 +2,8 @@
     <string name="app_name">Alpha DomoArigato</string>
     <string name="chasseur">chasseur</string>
     <string name="fregate">fregate</string>
-    <string name="choisir_un_ship">Choisir un Ship :</string>
+    <string name="choisir_un_ship">Choisir un type de Ship :</string>
     <string name="bienvenue_sur_starfoula">Bienvenue sur StarFoula</string>
     <string name="worldship">worldship</string>
+    <string name="entrez_quelque_chose">Entrez quelque chose</string>
 </resources>

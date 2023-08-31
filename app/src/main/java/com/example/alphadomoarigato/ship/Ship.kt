@@ -1,6 +1,9 @@
 package com.example.alphadomoarigato.ship
 
 import kotlinx.coroutines.awaitAll
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.net.URL
 
 open class Ship(val constuctShip: TypeShip) {
     val cc = constuctShip.type
@@ -39,5 +42,6 @@ open class Ship(val constuctShip: TypeShip) {
             println("Il reste donc ${constuctShip.dockMax-constuctShip.dockActualy} slot disponible, soit ${(constuctShip.dockMax-constuctShip.dockActualy)*10}/Kg de place.")
         }
     }
+
 
 }
